@@ -2,11 +2,11 @@
     "manifest_version": 3,
     "name": "GoodDealFinder",
     "description": "Finds the actual price of technology on ebay so an optimum deal can be found.",
-    "version": "1.0",
+    "version": "1.1",
     
     "content_scripts": [{
         "matches": ["https://www.ebay.co.uk/*"],
-        "js": ["main.js"],
+        "js": ["price_lookup.js", "main.js"],
         "css": ["main.css"]
     }]
   }
