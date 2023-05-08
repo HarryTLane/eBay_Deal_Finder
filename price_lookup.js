@@ -69,7 +69,7 @@ function get_25inch_price(str)
     
         else if (str.includes("5tb"))
         {
-            return "2.5\" 5TB HDD: £53\n";
+            return "2.5\" 5TB HDD: £60\n";
         }
     }
 

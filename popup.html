@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href = "popup.css">
+  <title>Document</title>
+  <script src="chargerLookup.js"></script>
+  <script src="popup.js"></script>
+</head>
+<body>
+
+  <div class="mainPage">
+
+  <h2><u>Harry's Mac Buying Assistant</u></h2>
+  <button id="PartFinder" class="glow-on-hover">Part Finder</button>
+  <br>
+  <button id="SerialLookup" class="glow-on-hover">Serial Lookup</button>
+  <br>
+  <button id="ChargerAssistant" class="glow-on-hover">Charger Assistant</button>
+  <br>
+  <button id="ReplacementGuide" class="glow-on-hover">Replacement Guide</button>
+
+  </div>
+
+
+
+  <div class="partFinder">
+
+  
+    <h2>Part Finder</h2>
+
+    
+  <select for="modelType" id="modelType">
+    <option value="" selected disabled hidden>Select Macbook Model</option>
+    <option value="macbook">Macbook</option>
+    <option value="macbookAir">Macbook Air</option>
+    <option value="macbookPro">Macbook Pro</option>
+  </select>
+
+
+
+  <label for="year">Year:</label><br>
+  <input type="text" name="year" id="year"><br>
+
+
+  
+  <label for="screenSize">Screen Size (11", 13", etc)</label><br>
+  <input type="text" name="screenSize" id="screenSize"><br>
+
+
+
+  <select for="part" id="part">
+    <option value="" selected disabled hidden>Select Part</option>
+    <option value="Screen">Screen</option>
+    <option value="Logic Board">Logic Board</option>
+    <option value="Battery">Battery</option>
+  </select><br><br>
+
+  <button class="glow-on-hover cancel" style="margin-bottom: 15px;">Cancel</button> 
+  <button id="PartFinderSubmit" class="glow-on-hover">Lookup</button>
+
+  </div>
+
+  <div class="chargerAssistant">
+
+  
+    <h2>Charger Assistant</h2>
+
+    
+  <select for="modelTypeC" id="modelTypeC">
+    <option value="" selected disabled hidden>Select Macbook Model</option>
+    <option value="macbook">Macbook</option>
+    <option value="macbookAir">Macbook Air</option>
+    <option value="macbookPro">Macbook Pro</option>
+  </select>
+
+
+
+  <label for="yearC">Year:</label><br>
+  <input type="text" name="yearC" id="yearC"><br>
+
+
+  
+  <label for="screenSize">Screen Size (11", 13", etc)</label><br>
+  <input type="text" name="screenSizeC" id="screenSizeC"><br>
+
+  <p id="ChargerType"></p><br><br>
+
+
+
+
+  <button class="glow-on-hover cancel" style="margin-bottom: 15px;">Cancel</button> 
+  <button id="ChargerAssistantSubmit" class="glow-on-hover">Find Charger</button>
+
+  </div>
+
+
+  <div class="replacementGuide">
+
+  
+    <h2>Replacement Guide</h2>
+
+    
+  <select for="modelTypeR" id="modelTypeR">
+    <option value="" selected disabled hidden>Select Macbook Model</option>
+    <option value="macbook">Macbook</option>
+    <option value="macbookAir">Macbook Air</option>
+    <option value="macbookPro">Macbook Pro</option>
+  </select>
+
+
+
+  <label for="yearR">Year:</label><br>
+  <input type="text" name="yearR" id="yearR"><br>
+
+
+  
+  <label for="screenSize">Screen Size (11", 13", etc)</label><br>
+  <input type="text" name="screenSizeR" id="screenSizeR"><br>
+
+
+
+
+  <select for="partR" id="partR">
+    <option value="" selected disabled hidden>Select Part</option>
+    <option value="Screen">Screen</option>
+    <option value="Logic Board">Logic Board</option>
+    <option value="Battery">Battery</option>
+  </select><br><br>
+
+  <button class="glow-on-hover cancel" style="margin-bottom: 15px;">Cancel</button> 
+  <button id="ReplacementGuideSubmit" class="glow-on-hover">Lookup</button>
+
+  </div>
+
+  <script src="initPopup.js"></script>
+
+</body>
+</html>
