@@ -74,15 +74,32 @@ function get_25inch_price(str)
     }
 
 
-    
-
-
-
-
-
     //ssd
 
+    else if (str.includes("128gb"))
+    {
+	return "2.5\" 128GB SSD: £15"
+    }
 
+    else if (str.includes("256gb"))
+    {
+	return "2.5\" 256GB SSD: £20"
+    }
+
+    else if (str.includes("512gb"))
+    {
+	return "2.5\" 512GB SSD: £30"
+    }
+
+    else if (str.includes("ssd"))
+    {
+        if (str.includes("1tb"))
+        {
+            return "2.5\" 1TB HDD: £50\n";
+        }
+    
+
+    }
 
     return "";
 
